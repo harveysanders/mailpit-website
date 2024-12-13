@@ -4,7 +4,7 @@ description: How to configure sendmail and/or PHP to send to Mailpit
 weight: 5
 ---
 
-Mailpit requires messages to be delivered via SMTP. Emails can come directly from and email client (eg: Thunderbird), or via a mail transfer agent (MTA) such as `sendmail` (which is commonly used with applications such as PHP). Mailpit has its own implementation of sendmail for convenience (by default delivering to `localhost:1025` instead of `localhost:25`), however you can theoretically use any existing sendmail client, provided it allows you to set the delivery host & port.
+Mailpit requires messages to be delivered via SMTP. Emails can come directly from an email client (eg: Thunderbird), or via a mail transfer agent (MTA) such as `sendmail` (which is commonly used with applications such as PHP). Mailpit has its own implementation of sendmail for convenience (by default delivering to `localhost:1025` instead of `localhost:25`), however you can theoretically use any existing sendmail client, provided it allows you to set the delivery host & port.
 
 {{< tip "warning" >}}
 Please note that Mailpit's implementation of sendmail is not intended to deliver email to other SMTP servers, only Mailpit. It may work, but is not recommended.
